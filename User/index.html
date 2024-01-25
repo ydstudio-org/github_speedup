@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>login</title>
+  <link rel="stylesheet" href="https://unpkg.com/mdui@1.0.2/dist/css/mdui.min.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+
+</head>
+
+<body>
+  <div class="mdui-container">
+    <form>
+      <p id="wel" class="login-title">Login to my Website</p>
+      <div class="mdui-textfield mdui-textfield-floating-label">
+        <label class="mdui-textfield-label">Username</label>
+        <input class="mdui-textfield-input" id="user" name="user" type="text" />
+      </div>
+      <div class="mdui-textfield mdui-textfield-floating-label">
+        <label class="mdui-textfield-label">password</label>
+        <input class="mdui-textfield-input" id="pass" name="pass" type="password" />
+      </div>
+      <button class="mdui-btn" type="reset">Reset</button>
+      <button class="mdui-btn" type="button" onClick="checkData()">Submit</button>
+      <button class="mdui-btn" id="lout" onclick="LoginOut()">Login Out</button>
+      <button id="sub" onClick="verifyUP()" hidden></button>
+      <p id="info"></p>
+    </form>
+  </div>
+
+
+  <div id="loading" class="load overlay-content background-blur" hidden>
+    <div class="mdui-spinner mdui-spinner-colorful load_img"></div><br /><br /><br /><br /><br />Loading...
+  </div>
+  <script src="https://unpkg.com/mdui@1.0.2/dist/js/mdui.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

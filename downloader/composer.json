@@ -1,0 +1,6 @@
+{
+    "require": {
+        "athlon1600/php-curl-file-downloader": "^1.0",
+        "chillerlan/php-qrcode": "^4.3"
+    }
+}
